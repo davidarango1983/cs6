@@ -1,0 +1,9 @@
+{
+    
+    "APP.TITLE": "Client Space Administration",
+    "APP.DESCIPTION": "Welcome to the ClientSpace Remote Administration. Here you will be able to manage conversion errors, notifications, and much more concerning Havas Media Group ClientSpaces.",
+    "APP.LANGUAGE" : "Language",
+    "APP.HOME" : "Home", 
+    "APP.REJECTEDS" : "Rejecteds",
+    "APP.ERRORS" : "Errors"
+}

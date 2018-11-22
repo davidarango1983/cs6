@@ -1,0 +1,115 @@
+
+@import "../../styles/variables";
+.search-form {
+  margin: 40px 5px;
+  font: normal 12px sans-serif;
+  div.input-group-addon {
+    background: #fff;
+    color: #80A3BD;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border: 1px solid #b6c3cd;
+    border-right: 0;
+  }
+  .input-group input {
+    background-color: #ffffff;
+    box-shadow: none;
+    color: #4E565C;
+    outline: none;
+    border: 1px solid #b6c3cd;
+    border-right: 0;
+    border-left: 0;
+  }
+  div.input-group-btn button {
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    background: #6caee0;
+    color: #ffffff;
+    border-color: #6caee0;
+    outline: none;
+    opacity: 0.9;
+    &:hover {
+      opacity: 1;
+    }
+    &:focus:active {
+      background-color: #6caee0;
+      color: #ffffff;
+      outline: none;
+    }
+  }
+}
+
+.fa {
+  &.fa-download {
+    margin: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: blue;
+  }
+  &.fa-recycle {
+    margin: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: seagreen;
+  }
+  &.fa-remove {
+    margin: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: red;
+  }
+  &.fa-arrow-down, &.fa-arrow-up, &.fa-file-excel-o {
+    margin: 4px;
+    cursor: pointer;
+  }
+  &:hover{
+    transition: all .1s ease-in-out;
+    transform: scale(1.5)
+  }
+}
+
+label {
+  position: relative;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 18px;
+  &:before, &:after {
+    font-family: FontAwesome;
+    font-size: 21px;
+    /*absolutely positioned*/
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &:before {
+    content: '\f096';
+    /*unchecked*/
+  }
+  &:after {
+    content: '\f046';
+    /*checked*/
+    /*checked icon will be hidden by default by using 0 max-width and overflow hidden*/
+    max-width: 0;
+    overflow: hidden;
+    opacity: 0.5;
+    /*CSS3 transitions for animated effect*/
+    transition: all 0.35s;
+    color: red;
+  }
+}
+
+/*hiding the original checkboxes*/
+
+input[type="checkbox"] {
+  display: none;
+  &:checked + label:after {
+    max-width: 25px;
+    /*an arbitratry number more than the icon's width*/
+    opacity: 1;
+    /*for fade in effect*/
+  }
+}
+
+/*when the user checks the checkbox the checked icon will animate in*/
+
+

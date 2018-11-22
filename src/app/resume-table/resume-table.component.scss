@@ -1,0 +1,40 @@
+
+@import "../../styles/variables";
+
+
+ .conteo{
+   font-size: 5em;
+ }
+
+  .isfinished{
+  transition: all .5s ease;
+  transform: scale(1.1);
+  color: $redHavas
+ }
+
+ .resumeTable span:hover {
+  cursor: pointer;
+  color: $redHavas;
+  font-weight: bold;
+ }
+
+ .table-resume{
+width: 100%;
+
+ }
+
+ .table-body{
+  max-height: 390px;
+  overflow: auto;
+ }
+
+ th.mat-header-cell {
+color: $redHavas;
+font-size: 1em;
+}
+
+.mat-footer-cell
+{
+  font-size: 1em;
+  color: $redHavas;
+  }

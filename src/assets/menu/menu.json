@@ -1,0 +1,23 @@
+[
+    {
+        "name": "APP.HOME",
+        "link": "/csAdmin/resume",
+        "icon": "icon",
+        "class": "aClass",
+        "onclick": ""
+    },
+    {
+        "name": "APP.REJECTEDS",
+        "link": "rejecteds",
+        "icon": "icon",
+        "class": "aClass",
+        "onclick": ""
+    },
+    {
+        "name": "APP.ERRORS",
+        "link": "errors",
+        "icon": "icon",
+        "class": "aClass",
+        "onclick": ""
+    }
+]
